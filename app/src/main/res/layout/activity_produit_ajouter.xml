@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identité du produit"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/background_light"
+        android:layout_marginBottom="4dp"></FrameLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduitCode"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp"
+        android:background="@android:color/white"
+        android:hint="@string/txtHintProduitCode"
+        android:singleLine="true"
+        android:layout_marginTop="2dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduitLibelle"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp"
+        android:background="@android:color/white"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:hint="@string/txtHintProduitLibelle" />
+
+    <!-- Informations du stock -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infos du stock"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp"
+        android:layout_marginTop="4dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/background_light"
+        android:layout_marginBottom="4dp"></FrameLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduitStockMini"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp"
+        android:background="@android:color/white"
+        android:hint="@string/txtHintProduitStockMini"
+        android:singleLine="true"
+        android:layout_marginTop="2dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduitStockEnCours"
+        android:textSize="@dimen/labelTextSize"
+        android:padding="4dp"
+        android:background="@android:color/white"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:hint="@string/txtHintProduitStockEnCours"
+        android:inputType="numberDecimal"/>
+
+</LinearLayout>

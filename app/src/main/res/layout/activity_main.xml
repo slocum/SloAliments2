@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblProduit"
+            android:id="@+id/lblProduit"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/menuLabelTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:id="@+id/lLaySSMnuProduit"
+        android:visibility="visible"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblProduitAjouter"
+            android:id="@+id/lblProduitAjout"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/ssMenuLabelTextSize"
+            android:clickable="true"
+            android:onClick="startProduitAjouter"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblProduitModifier"
+            android:id="@+id/lblProduitModifier"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/ssMenuLabelTextSize"
+            android:clickable="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:paddingTop="2dp"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStock"
+            android:id="@+id/lblStock"
+            android:layout_marginLeft="3px"
+            android:textSize="@dimen/menuLabelTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:id="@+id/lLaySSMnuStock"
+        android:visibility="visible"
+        android:padding="4dp">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStockEntree"
+            android:id="@+id/lblStockEntree"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/ssMenuLabelTextSize"
+            android:clickable="true"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStockSortie"
+            android:id="@+id/lblStockSortie"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/ssMenuLabelTextSize"
+            android:clickable="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
