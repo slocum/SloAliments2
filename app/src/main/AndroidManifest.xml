@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="fr.slocum79.sloaliments.MainActivity" />
         </activity>
+        <activity
+            android:name=".ProduitListeActivite"
+            android:label="@string/title_activity_produit_liste_activite"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.slocum79.sloaliments.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

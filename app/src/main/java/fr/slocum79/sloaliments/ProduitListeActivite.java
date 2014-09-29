@@ -1,28 +1,24 @@
 package fr.slocum79.sloaliments;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import fr.slocum79.sloaliments.R;
 
-import fr.slocum79.boiteoutils.Outil;
+public class ProduitListeActivite extends Activity {
 
-
-public class MainActivity extends Activity {
-
-    /*** Construction de l'UI ***/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_produit_liste_activite);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.produit_liste_activite, menu);
         return true;
     }
 
@@ -37,16 +33,4 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    public void startProduitAjouter(View view)
-    {
-        // Création de l'Intent
-        Intent intent = new Intent(this, ProduitAjouterActivity.class);
-        intent.putExtra(Outil.KEY_TYPE_ACTION, Outil.eKeyTypeAction.Ajouter.toString());
-        startActivity(intent);
-
-    }
-
-    /*** Implémentation ***/
-
 }
